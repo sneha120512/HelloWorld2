@@ -1,0 +1,19 @@
+class PalindromeNumber {
+        public static void main(String[] args) {
+
+            int number = 123;
+        int temp = number;
+        int reverse = 0;
+
+        while(temp > 0){
+            int digit = temp % 10;
+            reverse = reverse * 10 + digit;
+            temp = temp / 10;
+        }
+
+        if(number == reverse)
+            System.out.println(number + " is Palindrome");
+        else
+            System.out.println(number + " is Not Palindrome");
+    }
+}
